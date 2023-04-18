@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen - Your Future Starts Here</title>
+
+    <!-- Bootstrap CSS and Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+
+    <!-- harry styles -->
+    <style>
+        /* custom styles insert here */
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">NextGen</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-4">
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to NextGen</h1>
+        <p class="lead">We offer a wide range of innovative products and services to help you achieve your goals and realize your dreams.</p>
+        <hr class="my-4">
+        <p>Explore our products and discover how we can help you succeed in life.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
+    </div>
+</div>
+
+<div class="container my-4">
+    <h2 class="text-center">Featured Products</h2>
+    <p class="lead text-center">Check out our top picks for you.</p>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200.png?text=NextGen+Smart+Watch" class="card-img-top" alt="NextGen Smart Watch">
+                <div class="card-body">
+                    <h5 class="card-title">NextGen Smart Watch</h5>
+                    <p class="card-text">Never miss a message or a call again. Oh, and you can check the time, too.</p>
+                    <span class="badge bg-success">$149.99</span>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary btn-sm" onclick="addToCart('smart-watch')">
+                        <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200.png?text=NextGen+Wireless+Earbuds" class="card-img-top" alt="NextGen Wireless Earbuds">
+                <div class="card-body">
+                    <h5 class="card-title">NextGen Wireless Earbuds</h5>
+                    <p class="card-text">Experience high-quality audio with our wireless earbuds.</p>
+                    <span class="badge bg-success">$99.99</span>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary btn-sm" onclick="addToCart('wireless-earbuds')">
+                        <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200.png?text=NextGen+Fitness+Tracker" class="card-img-top" alt="NextGen Fitness Tracker">
+                <div class="card-body">
+                    <h5 class="card-title">NextGen Fitness Tracker</h5>
+                    <p class="card-text">Stay fit and healthy with our advanced fitness tracker.</p>
+                    <span class="badge bg-success">$129.99</span>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary btn-sm" onclick="addToCart('fitness-tracker')">
+                        <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-4">
+    <h2 class="text-center">Our Services</h2>
+    <p class="lead text-center">We offer a range of services to help you grow and succeed.</p>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Digital Marketing</h5>
+                    <p class="card-text">Reach your target audience and increase your sales with our proven digital marketing strategies.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Web Development</h5>
+                    <p class="card-text">Get a stunning website that showcases your brand and converts visitors into customers.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-4">
+    <h2 class="text-center">Contact Us</h2>
+    <p class="lead text-center">Got a question or feedback?
+        Fill out the form below and we'll get back to you as soon as possible.</p>
+    <form>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    <label for="firstName">First Name</label>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    <label for="lastName">Last Name</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <label for="email">Email address</label>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="form-floating">
+                    <input type="tel" class="form-control" id="phone" placeholder="123-456-7890">
+                    <label for="phone">Phone Number</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="message" style="height: 100px"></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<footer class="bg-light py-3">
+    <div class="container text-center">
+        <p>&copy; 2023 NextGen Technologies. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-guA5DH5X7VnzoF4BTD7nnmZtDK8ZnVGYdN/B/6Ib2slvF8NYRymNc5fZ/hzLZ3vq8GzW+r6xPnhFgDq3qx1Hg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha512-O66K94+LWoUHF9a/OlAsmbn6llDdokYAZ+eZsxzKxgUquCjM3qGvX9sL6T/IV6EC68oeZdzNYU6+yR40dBLx/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Custom Script -->
+<script src="script.js"></script>
+</body>
+</html>
